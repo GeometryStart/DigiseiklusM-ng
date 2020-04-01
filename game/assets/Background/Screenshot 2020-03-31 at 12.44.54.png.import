@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Run1.png-2bc0679e09d554b01a3940a91a3cd287.stex"
+path="res://.import/Screenshot 2020-03-31 at 12.44.54.png-b1323915d379cd7c57766dcee335965e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Run1.png"
-dest_files=[ "res://.import/Run1.png-2bc0679e09d554b01a3940a91a3cd287.stex" ]
+source_file="res://assets/Background/Screenshot 2020-03-31 at 12.44.54.png"
+dest_files=[ "res://.import/Screenshot 2020-03-31 at 12.44.54.png-b1323915d379cd7c57766dcee335965e.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
