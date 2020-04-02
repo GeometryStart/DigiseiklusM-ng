@@ -1,19 +1,89 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://src/TilesetNew.tscn" type="PackedScene" id=1]
+[ext_resource path="res://objektid/ram.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Actors/Player.gd" type="Script" id=3]
-[ext_resource path="res://src/ELements/Checkpoint1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/taust_elementidega_1.png" type="Texture" id=4]
+[ext_resource path="res://assets/taust_elementidega_2PUN.png" type="Texture" id=5]
+[ext_resource path="res://objektid/Must_pind.tscn" type="PackedScene" id=6]
+[ext_resource path="res://objektid/vent.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/Background/taust_elementideta_2CLEAN.png" type="Texture" id=8]
+[ext_resource path="res://assets/Background/taust_elementideta_1CLEAN.png" type="Texture" id=9]
+[ext_resource path="res://Falling.tscn" type="PackedScene" id=10]
+[ext_resource path="res://objektid/CP_punane.tscn" type="PackedScene" id=11]
 
 [node name="Level1" type="Node2D"]
 position = Vector2( 1, -1 )
 
-[node name="Tileset1" parent="." instance=ExtResource( 1 )]
+[node name="taust_elementideta_1CLEAN" type="Sprite" parent="."]
+position = Vector2( 959, 541 )
+texture = ExtResource( 9 )
+
+[node name="taust_elementideta_2CLEAN" type="Sprite" parent="."]
+position = Vector2( 2878, 541 )
+texture = ExtResource( 8 )
+
+[node name="taust_elementidega_1" type="Sprite" parent="."]
+visible = false
+position = Vector2( 959, 541 )
+texture = ExtResource( 4 )
+
+[node name="taust_elementidega_2PUN" type="Sprite" parent="."]
+visible = false
+position = Vector2( 2879, 541 )
+texture = ExtResource( 5 )
+
+[node name="Must_pind" parent="." instance=ExtResource( 6 )]
+position = Vector2( 217, 864 )
+scale = Vector2( 0.489, 0.704 )
+
+[node name="Must_pind2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1711, 866 )
+scale = Vector2( 0.745, 0.724 )
+
+[node name="Must_pind3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3412, 865 )
+scale = Vector2( 0.941, 0.722 )
+
+[node name="CP_punane" parent="." instance=ExtResource( 11 )]
+position = Vector2( 3697, 688 )
+scale = Vector2( 0.144, 0.126 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 107.19, 509.541 )
+position = Vector2( 190, 787 )
 script = ExtResource( 3 )
 
-[node name="Checkpoint" parent="." instance=ExtResource( 4 )]
-position = Vector2( 4393.58, 1148.85 )
-level_scene = "res://src/Question.tscn"
+[node name="ram" parent="." instance=ExtResource( 1 )]
+position = Vector2( 701, 729 )
+scale = Vector2( 0.39, 0.391 )
+
+[node name="ram2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1107, 587 )
+scale = Vector2( 0.39, 0.391 )
+
+[node name="ram3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2159, 524 )
+scale = Vector2( 0.39, 0.391 )
+
+[node name="ram4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2670, 540 )
+scale = Vector2( 0.39, 0.391 )
+
+[node name="ventikas" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1728, 713 )
+scale = Vector2( 0.418745, 0.420926 )
+
+[node name="ventikas2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3109, 713 )
+scale = Vector2( 0.418745, 0.420926 )
+
+[node name="ventikas3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3108, 495 )
+scale = Vector2( 0.418745, 0.420926 )
+
+[node name="ventikas4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3329, 713 )
+scale = Vector2( 0.418745, 0.420926 )
+
+[node name="Falling" parent="." instance=ExtResource( 10 )]
+position = Vector2( 2109, 1367 )
