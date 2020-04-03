@@ -85,5 +85,4 @@ scale = Vector2( 0.418745, 0.420926 )
 position = Vector2( 3329, 713 )
 scale = Vector2( 0.418745, 0.420926 )
 
-[node name="Falling" parent="." instance=ExtResource( 10 )]
-position = Vector2( 2109, 1367 )
+
