@@ -1,6 +1,8 @@
 extends Area2D
 export(String, FILE, "*.tscn") var level_scene
 
+func _ready():
+	pass
 
 func _physics_process(delta):
 	var bodies = get_overlapping_bodies()
@@ -8,5 +10,4 @@ func _physics_process(delta):
 	for body in bodies:
 		if body.name == "Player":
 			get_tree().change_scene(level_scene)
-			
-
+	

@@ -24,6 +24,11 @@ config/name="Digiseiklus"
 run/main_scene="res://src/Levels/Level1.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Checkpoint_red1="*res://src/ELements/Checkpoint_red1.tscn"
+Checkpoint_green="*res://src/ELements/Checkpoint_green.tscn"
+
 [display]
 
 window/size/width=1920
@@ -49,6 +54,12 @@ jump={
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
  ]
 }
+
+[layer_names]
+
+2d_physics/layer_1="player"
+2d_physics/layer_2="checkpoint"
+2d_physics/layer_3="enemy"
 
 [rendering]
 
