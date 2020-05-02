@@ -1,8 +1,7 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://objektid/ram.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/Actors/Player.gd" type="Script" id=3]
 [ext_resource path="res://assets/taust_elementidega_1.png" type="Texture" id=4]
 [ext_resource path="res://assets/taust_elementidega_2PUN.png" type="Texture" id=5]
 [ext_resource path="res://objektid/Must_pind.tscn" type="PackedScene" id=6]
@@ -10,19 +9,29 @@
 [ext_resource path="res://assets/Background/taust_elementideta_2CLEAN.png" type="Texture" id=8]
 [ext_resource path="res://assets/Background/taust_elementideta_1CLEAN.png" type="Texture" id=9]
 [ext_resource path="res://assets/Background/taust_elementidega_5.png" type="Texture" id=10]
-[ext_resource path="res://objektid/CP_punane.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/ELements/Checkpoint_red1.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/Background/taust_elementidega_4.png" type="Texture" id=12]
 [ext_resource path="res://assets/Background/taust_elementidega_7.png" type="Texture" id=13]
 [ext_resource path="res://assets/Background/taust_elementidega_8.png" type="Texture" id=14]
 [ext_resource path="res://assets/Background/taust_elementidega_10.png" type="Texture" id=15]
 [ext_resource path="res://assets/Background/taust_elementidega_11.png" type="Texture" id=16]
 [ext_resource path="res://objektid/Vaike_vent.tscn" type="PackedScene" id=17]
+[ext_resource path="res://objektid/CD.tscn" type="PackedScene" id=18]
+[ext_resource path="res://objektid/ram_small.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/ELements/Checkpoint_green.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/ELements/Checkpoint1.gd" type="Script" id=22]
 
 [node name="Level1" type="Node2D"]
 position = Vector2( 1, -1 )
 
 [node name="taust_elementideta_1CLEAN" type="Sprite" parent="."]
-position = Vector2( 959, 541 )
+position = Vector2( 953.015, 543.992 )
+scale = Vector2( 1.00623, 0.994459 )
+texture = ExtResource( 9 )
+
+[node name="taust_elementideta_1CLEAN2" type="Sprite" parent="."]
+position = Vector2( -974.075, 552.969 )
+scale = Vector2( 1.02494, 1.02217 )
 texture = ExtResource( 9 )
 
 [node name="taust_elementideta_2CLEAN" type="Sprite" parent="."]
@@ -67,202 +76,188 @@ texture = ExtResource( 16 )
 position = Vector2( 217, 864 )
 scale = Vector2( 0.489, 0.704 )
 
-[node name="Must_pind2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1711, 866 )
-scale = Vector2( 0.745, 0.724 )
+[node name="Must_pind2" parent="Must_pind" instance=ExtResource( 6 )]
+position = Vector2( 3055.21, 2.84094 )
+scale = Vector2( 1.52352, 1.02841 )
 
-[node name="Must_pind3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3479, 865 )
-scale = Vector2( 1.076, 0.722 )
+[node name="Must_pind3" parent="Must_pind" instance=ExtResource( 6 )]
+position = Vector2( 6670.76, 1.42053 )
+scale = Vector2( 2.20041, 1.02557 )
 
-[node name="Must_pind4" parent="." instance=ExtResource( 6 )]
-position = Vector2( 5425, 866 )
-scale = Vector2( 1.147, 0.722 )
+[node name="Must_pind4" parent="Must_pind" instance=ExtResource( 6 )]
+position = Vector2( 10650.3, 2.84094 )
+scale = Vector2( 2.3456, 1.02557 )
 
-[node name="Must_pind5" parent="." instance=ExtResource( 6 )]
-position = Vector2( 7453, 866 )
-scale = Vector2( 0.609, 0.722 )
+[node name="Must_pind5" parent="Must_pind" instance=ExtResource( 6 )]
+position = Vector2( 14797.5, 2.84094 )
+scale = Vector2( 1.2454, 1.02557 )
 
-[node name="Must_pind6" parent="." instance=ExtResource( 6 )]
-position = Vector2( 8431, 867 )
-scale = Vector2( 0.609, 0.722 )
+[node name="Must_pind6" parent="Must_pind" instance=ExtResource( 6 )]
+position = Vector2( 16797.5, 4.26135 )
+scale = Vector2( 1.2454, 1.02557 )
 
-[node name="Must_pind7" parent="." instance=ExtResource( 6 )]
-position = Vector2( 9773, 868 )
-scale = Vector2( 0.361, 0.722 )
+[node name="Must_pind7" parent="Must_pind" instance=ExtResource( 6 )]
+position = Vector2( 19541.9, 5.68188 )
+scale = Vector2( 0.738241, 1.02557 )
 
-[node name="Must_pind8" parent="." instance=ExtResource( 6 )]
-position = Vector2( 11308, 867 )
-scale = Vector2( 1.211, 0.722 )
+[node name="Must_pind8" parent="Must_pind" instance=ExtResource( 6 )]
+position = Vector2( 22681, 4.26135 )
+scale = Vector2( 2.47648, 1.02557 )
 
-[node name="Must_pind9" parent="." instance=ExtResource( 6 )]
-position = Vector2( 13893, 868 )
-scale = Vector2( 1.754, 0.722 )
+[node name="Must_pind9" parent="Must_pind" instance=ExtResource( 6 )]
+position = Vector2( 27967.3, 5.68188 )
+scale = Vector2( 3.58691, 1.02557 )
 
-[node name="Must_pind10" parent="." instance=ExtResource( 6 )]
-position = Vector2( 15212, 867 )
-scale = Vector2( 0.325, 0.722 )
-
-[node name="CP_punane" parent="." instance=ExtResource( 11 )]
-position = Vector2( 3697, 688 )
-scale = Vector2( 0.144, 0.126 )
+[node name="Must_pind10" parent="Must_pind" instance=ExtResource( 6 )]
+position = Vector2( 30664.6, 4.26135 )
+scale = Vector2( 0.664622, 1.02557 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 190, 787 )
-script = ExtResource( 3 )
+position = Vector2( 194.809, 781.593 )
 
 [node name="ram" parent="." instance=ExtResource( 1 )]
 position = Vector2( 701, 729 )
 scale = Vector2( 0.39, 0.391 )
 
-[node name="ram2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1107, 587 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram2" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 1041.03, -363.171 )
 
-[node name="ram3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2159, 524 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram3" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 3738.46, -524.297 )
 
-[node name="ram4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2670, 540 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram4" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 5048.72, -483.376 )
 
-[node name="ram5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 4226, 771 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram5" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 9038.46, 107.417 )
 
-[node name="ram6" parent="." instance=ExtResource( 1 )]
-position = Vector2( 4657, 697 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram6" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 10143.6, -81.8414 )
 
-[node name="ram7" parent="." instance=ExtResource( 1 )]
-position = Vector2( 6181, 672 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram7" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 14051.3, -145.78 )
 
-[node name="ram8" parent="." instance=ExtResource( 1 )]
-position = Vector2( 6588, 531 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram8" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 15094.9, -506.394 )
 
-[node name="ram9" parent="." instance=ExtResource( 1 )]
-position = Vector2( 6990, 672 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram9" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 16125.6, -145.78 )
 
-[node name="ram10" parent="." instance=ExtResource( 1 )]
-position = Vector2( 7940, 709 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram10" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 18561.5, -51.1509 )
 
-[node name="ram11" parent="." instance=ExtResource( 1 )]
-position = Vector2( 8959, 551 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram11" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 21174.4, -455.243 )
 
-[node name="ram12" parent="." instance=ExtResource( 1 )]
-position = Vector2( 9368, 710 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram12" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 22223.1, -48.5934 )
 
-[node name="ram13" parent="." instance=ExtResource( 1 )]
-position = Vector2( 10156, 590 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram13" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 24243.6, -355.499 )
 
-[node name="ram14" parent="." instance=ExtResource( 1 )]
-position = Vector2( 10538, 693 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram14" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 25223.1, -92.0717 )
 
-[node name="ram15" parent="." instance=ExtResource( 1 )]
-position = Vector2( 11906, 611 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram15" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 28730.8, -301.79 )
 
-[node name="ram16" parent="." instance=ExtResource( 1 )]
-position = Vector2( 12354, 470 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram16" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 29879.5, -662.404 )
 
-[node name="ram17" parent="." instance=ExtResource( 1 )]
-position = Vector2( 12819, 565 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram17" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 31071.8, -419.437 )
 
-[node name="ram18" parent="." instance=ExtResource( 1 )]
-position = Vector2( 14496, 420 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram18" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 35371.8, -790.281 )
 
-[node name="ram19" parent="." instance=ExtResource( 1 )]
-position = Vector2( 14944, 572 )
-scale = Vector2( 0.39, 0.391 )
+[node name="ram19" parent="ram" instance=ExtResource( 1 )]
+position = Vector2( 36520.5, -401.535 )
 
 [node name="ventikas" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1728, 713 )
 scale = Vector2( 0.418745, 0.420926 )
 
-[node name="ventikas2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3109, 713 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="ventikas2" parent="ventikas" instance=ExtResource( 7 )]
+position = Vector2( 3297.95, 0 )
 
-[node name="ventikas3" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3108, 495 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="ventikas3" parent="ventikas" instance=ExtResource( 7 )]
+position = Vector2( 3295.56, -517.906 )
 
-[node name="ventikas4" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3329, 713 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="ventikas4" parent="ventikas" instance=ExtResource( 7 )]
+position = Vector2( 3823.33, 0 )
 
-[node name="ventikas5" parent="." instance=ExtResource( 7 )]
-position = Vector2( 5542, 712 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="ventikas5" parent="ventikas" instance=ExtResource( 7 )]
+position = Vector2( 9108.17, -2.37573 )
 
-[node name="ventikas6" parent="." instance=ExtResource( 7 )]
-position = Vector2( 8593, 714 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="ventikas6" parent="ventikas" instance=ExtResource( 7 )]
+position = Vector2( 16392.5, -4.41443 )
 
-[node name="ventikas7" parent="." instance=ExtResource( 7 )]
-position = Vector2( 11063, 714 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="ventikas7" parent="ventikas" instance=ExtResource( 7 )]
+position = Vector2( 22292.8, 2.37573 )
 
-[node name="ventikas8" parent="." instance=ExtResource( 7 )]
-position = Vector2( 13325, 714 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="ventikas8" parent="ventikas" instance=ExtResource( 7 )]
+position = Vector2( 27694.7, 2.37573 )
 
-[node name="ventikas9" parent="." instance=ExtResource( 7 )]
-position = Vector2( 13931, 713 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="ventikas9" parent="ventikas" instance=ExtResource( 7 )]
+position = Vector2( 29141.8, 0 )
 
-[node name="ventikas10" parent="." instance=ExtResource( 7 )]
-position = Vector2( 14146, 714 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="ventikas10" parent="ventikas" instance=ExtResource( 7 )]
+position = Vector2( 29662.6, 2.37573 )
 
-[node name="ventikas11" parent="." instance=ExtResource( 7 )]
-position = Vector2( 14040, 495 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="ventikas11" parent="ventikas" instance=ExtResource( 7 )]
+position = Vector2( 25395.4, 604.685 )
 
-[node name="vaikevent" parent="." instance=ExtResource( 17 )]
-position = Vector2( 5381, 766 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="vaikevent" parent="ventikas" instance=ExtResource( 17 )]
+position = Vector2( 8723.69, 125.913 )
 
-[node name="vaikevent2" parent="." instance=ExtResource( 17 )]
-position = Vector2( 7405, 766 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="vaikevent2" parent="ventikas" instance=ExtResource( 17 )]
+position = Vector2( 13557.2, 125.913 )
 
-[node name="vaikevent3" parent="." instance=ExtResource( 17 )]
-position = Vector2( 8430, 767 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="vaikevent3" parent="ventikas" instance=ExtResource( 17 )]
+position = Vector2( 16005, 128.289 )
 
-[node name="vaikevent4" parent="." instance=ExtResource( 17 )]
-position = Vector2( 9882, 767 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="vaikevent4" parent="ventikas" instance=ExtResource( 17 )]
+position = Vector2( 19472.5, 128.289 )
 
-[node name="vaikevent5" parent="." instance=ExtResource( 17 )]
-position = Vector2( 10903, 768 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="vaikevent5" parent="ventikas" instance=ExtResource( 17 )]
+position = Vector2( 21910.7, 130.664 )
 
-[node name="vaikevent6" parent="." instance=ExtResource( 17 )]
-position = Vector2( 11644, 767 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="vaikevent6" parent="ventikas" instance=ExtResource( 17 )]
+position = Vector2( 23680.3, 128.289 )
 
-[node name="vaikevent7" parent="." instance=ExtResource( 17 )]
-position = Vector2( 13168, 768 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="vaikevent7" parent="ventikas" instance=ExtResource( 17 )]
+position = Vector2( 27319.7, 130.664 )
 
-[node name="vaikevent8" parent="." instance=ExtResource( 17 )]
-position = Vector2( 13772, 769 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="vaikevent8" parent="ventikas" instance=ExtResource( 17 )]
+position = Vector2( 28762.1, 133.04 )
 
-[node name="vaikevent9" parent="." instance=ExtResource( 17 )]
-position = Vector2( 14315, 769 )
-scale = Vector2( 0.418745, 0.420926 )
+[node name="vaikevent9" parent="ventikas" instance=ExtResource( 17 )]
+position = Vector2( 29213.8, -396.111 )
+
+[node name="CD" parent="." instance=ExtResource( 18 )]
+position = Vector2( 6590.59, 813.835 )
+
+[node name="CD2" parent="." instance=ExtResource( 18 )]
+position = Vector2( 8961.22, 814.766 )
+
+[node name="CD3" parent="." instance=ExtResource( 18 )]
+position = Vector2( 12164.7, 814.766 )
+
+[node name="CD4" parent="." instance=ExtResource( 18 )]
+position = Vector2( 12801.4, 815.386 )
+
+[node name="ram_small" parent="." instance=ExtResource( 19 )]
+position = Vector2( 1552.64, 712.992 )
+
+[node name="ram_small2" parent="." instance=ExtResource( 19 )]
+position = Vector2( 1860.43, 711.756 )
+
+[node name="ram_small3" parent="." instance=ExtResource( 19 )]
+position = Vector2( 14148.7, 477.781 )
+
+[node name="Checkpoint_red1" parent="." instance=ExtResource( 11 )]
+position = Vector2( 3801.14, 731.447 )
+
+[node name="Checkpoint_green" parent="." instance=ExtResource( 20 )]
+position = Vector2( 3691.54, 779.279 )
+script = ExtResource( 22 )
