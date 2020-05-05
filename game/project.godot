@@ -26,8 +26,16 @@ config/icon="res://icon.png"
 
 [autoload]
 
+<<<<<<< HEAD
 Checkpoint_red1="*res://src/ELements/Checkpoint_red1.tscn"
 Checkpoint_green="*res://src/ELements/Checkpoint_green.tscn"
+=======
+Checkpoint_red1="*res://src/ELements/Checkpoint_red1.gd"
+Question="*res://src/ELements/Question.tscn"
+Checkpoint_red2="*res://src/ELements/Checkpoint_red2.gd"
+Checkpoint_red3="*res://src/ELements/Checkpoint_red3.gd"
+teleporter_data="*res://src/Levels/teleporter_data.gd"
+>>>>>>> muudetud Chippy teleportimine ühel levelil
 
 [display]
 

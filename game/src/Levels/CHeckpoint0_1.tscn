@@ -1,0 +1,79 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://src/ELements/ram_small.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/ELements/Checkpoint_red1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/Background/taust_elementideta_1CLEAN.png" type="Texture" id=4]
+[ext_resource path="res://objektid/vent.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/ELements/Must_pind.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/ELements/ram.tscn" type="PackedScene" id=7]
+
+[node name="Checkpoint0_1" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1224.17, 676.513 )
+scale = Vector2( 1.25202, 1.25202 )
+texture = ExtResource( 4 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 3211.85, 678.485 )
+scale = Vector2( 1.25567, 1.25567 )
+texture = ExtResource( 4 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( -740.724, 684.402 )
+scale = Vector2( 1.2228, 1.2228 )
+texture = ExtResource( 4 )
+
+[node name="Must_pind" parent="." instance=ExtResource( 6 )]
+position = Vector2( 217, 864 )
+scale = Vector2( 0.489, 0.704 )
+
+[node name="Must_pind2" parent="Must_pind" instance=ExtResource( 6 )]
+position = Vector2( 3055.21, 2.84094 )
+scale = Vector2( 1.52352, 1.02841 )
+
+[node name="Must_pind3" parent="Must_pind" instance=ExtResource( 6 )]
+position = Vector2( 6670.76, 1.42053 )
+scale = Vector2( 2.20041, 1.02557 )
+
+[node name="ram" parent="." instance=ExtResource( 7 )]
+position = Vector2( 701, 729 )
+scale = Vector2( 0.39, 0.391 )
+
+[node name="ram2" parent="ram" instance=ExtResource( 7 )]
+position = Vector2( 1041.03, -363.171 )
+
+[node name="ram3" parent="ram" instance=ExtResource( 7 )]
+position = Vector2( 3738.46, -524.297 )
+
+[node name="ram4" parent="ram" instance=ExtResource( 7 )]
+position = Vector2( 5048.72, -483.376 )
+
+[node name="ventikas" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1728, 713 )
+scale = Vector2( 0.418745, 0.420926 )
+
+[node name="ventikas2" parent="ventikas" instance=ExtResource( 5 )]
+position = Vector2( 3297.95, 0 )
+
+[node name="ventikas3" parent="ventikas" instance=ExtResource( 5 )]
+position = Vector2( 3295.56, -517.906 )
+
+[node name="ventikas4" parent="ventikas" instance=ExtResource( 5 )]
+position = Vector2( 3823.33, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 346.203, 784.168 )
+
+[node name="ram_small" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1572.71, 705.454 )
+
+[node name="ram_small2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1889.44, 707.264 )
+
+[node name="ram_small3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 3491.21, 714.504 )
+
+[node name="Checkpoint_red1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3867.57, 741.34 )

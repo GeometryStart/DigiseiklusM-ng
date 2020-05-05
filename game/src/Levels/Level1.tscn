@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://objektid/ram.tscn" type="PackedScene" id=1]
@@ -5,6 +6,16 @@
 [ext_resource path="res://assets/taust_elementidega_1.png" type="Texture" id=4]
 [ext_resource path="res://assets/taust_elementidega_2PUN.png" type="Texture" id=5]
 [ext_resource path="res://objektid/Must_pind.tscn" type="PackedScene" id=6]
+=======
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://src/ELements/ram.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/ELements/Checkpoint_red2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/Background/taust_elementidega_1.png" type="Texture" id=4]
+[ext_resource path="res://assets/Background/taust_elementidega_2PUN.png" type="Texture" id=5]
+[ext_resource path="res://src/ELements/Must_pind.tscn" type="PackedScene" id=6]
+>>>>>>> muudetud Chippy teleportimine ühel levelil
 [ext_resource path="res://objektid/vent.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/Background/taust_elementideta_2CLEAN.png" type="Texture" id=8]
 [ext_resource path="res://assets/Background/taust_elementideta_1CLEAN.png" type="Texture" id=9]
@@ -15,6 +26,7 @@
 [ext_resource path="res://assets/Background/taust_elementidega_8.png" type="Texture" id=14]
 [ext_resource path="res://assets/Background/taust_elementidega_10.png" type="Texture" id=15]
 [ext_resource path="res://assets/Background/taust_elementidega_11.png" type="Texture" id=16]
+<<<<<<< HEAD
 [ext_resource path="res://objektid/Vaike_vent.tscn" type="PackedScene" id=17]
 [ext_resource path="res://objektid/CD.tscn" type="PackedScene" id=18]
 [ext_resource path="res://objektid/ram_small.tscn" type="PackedScene" id=19]
@@ -23,6 +35,18 @@
 
 [node name="Level1" type="Node2D"]
 position = Vector2( 1, -1 )
+=======
+[ext_resource path="res://src/ELements/Vaike_vent.tscn" type="PackedScene" id=17]
+[ext_resource path="res://objektid/CD.tscn" type="PackedScene" id=18]
+[ext_resource path="res://objektid/ram_small.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/ELements/Checkpoint_red3.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/Levels/Level1.gd" type="Script" id=23]
+
+[node name="Level1" type="Node2D"]
+position = Vector2( 1, -1 )
+script = ExtResource( 23 )
+player = ExtResource( 2 )
+>>>>>>> muudetud Chippy teleportimine ühel levelil
 
 [node name="taust_elementideta_1CLEAN" type="Sprite" parent="."]
 position = Vector2( 953.015, 543.992 )
@@ -112,9 +136,12 @@ scale = Vector2( 3.58691, 1.02557 )
 position = Vector2( 30664.6, 4.26135 )
 scale = Vector2( 0.664622, 1.02557 )
 
+<<<<<<< HEAD
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 194.809, 781.593 )
 
+=======
+>>>>>>> muudetud Chippy teleportimine ühel levelil
 [node name="ram" parent="." instance=ExtResource( 1 )]
 position = Vector2( 701, 729 )
 scale = Vector2( 0.39, 0.391 )
@@ -211,7 +238,11 @@ position = Vector2( 25395.4, 604.685 )
 position = Vector2( 8723.69, 125.913 )
 
 [node name="vaikevent2" parent="ventikas" instance=ExtResource( 17 )]
+<<<<<<< HEAD
 position = Vector2( 13557.2, 125.913 )
+=======
+position = Vector2( 13371.6, 125.913 )
+>>>>>>> muudetud Chippy teleportimine ühel levelil
 
 [node name="vaikevent3" parent="ventikas" instance=ExtResource( 17 )]
 position = Vector2( 16005, 128.289 )
@@ -252,12 +283,41 @@ position = Vector2( 1552.64, 712.992 )
 [node name="ram_small2" parent="." instance=ExtResource( 19 )]
 position = Vector2( 1860.43, 711.756 )
 
+<<<<<<< HEAD
+=======
+[node name="ram_small4" parent="." instance=ExtResource( 19 )]
+position = Vector2( 5880.09, 781.462 )
+
+[node name="ram_small5" parent="." instance=ExtResource( 19 )]
+position = Vector2( 5670.39, 702.515 )
+
+>>>>>>> muudetud Chippy teleportimine ühel levelil
 [node name="ram_small3" parent="." instance=ExtResource( 19 )]
 position = Vector2( 14148.7, 477.781 )
 
 [node name="Checkpoint_red1" parent="." instance=ExtResource( 11 )]
+<<<<<<< HEAD
 position = Vector2( 3801.14, 731.447 )
 
 [node name="Checkpoint_green" parent="." instance=ExtResource( 20 )]
 position = Vector2( 3691.54, 779.279 )
 script = ExtResource( 22 )
+=======
+position = Vector2( 3714.22, 727.5 )
+teleport_location = Vector2( 3700, 750 )
+
+[node name="Checkpoint_red2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 7497.89, 726.654 )
+
+[node name="Checkpoint_red3" parent="." instance=ExtResource( 21 )]
+position = Vector2( 11406.7, 724.532 )
+
+[node name="CP1_pos" type="Position2D" parent="."]
+position = Vector2( 3819.24, 820.047 )
+
+[node name="CP1_pos2" type="Position2D" parent="."]
+position = Vector2( 7647.31, 818.774 )
+
+[node name="CP1_pos3" type="Position2D" parent="."]
+position = Vector2( 11638.8, 703.935 )
+>>>>>>> muudetud Chippy teleportimine ühel levelil
