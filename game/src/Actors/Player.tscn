@@ -37,33 +37,16 @@ extents = Vector2( 16.4103, 26.3111 )
 [node name="Player" type="KinematicBody2D" groups=[
 "player",
 ]]
-<<<<<<< HEAD
 collision_mask = 2
 script = ExtResource( 12 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 5.15173, 2.75134 )
-=======
-position = Vector2( 1.70172, 5.10516 )
-collision_mask = 2
-script = ExtResource( 12 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( -9.31059, -9.31053 )
-rotating = true
-current = true
-process_mode = 0
-smoothing_enabled = true
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -7.60881, -0.801987 )
->>>>>>> muudetud Chippy teleportimine ühel levelil
 scale = Vector2( 0.185958, 0.199718 )
 frames = SubResource( 1 )
 animation = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-<<<<<<< HEAD
 position = Vector2( 0.299721, 5.54473 )
 shape = SubResource( 2 )
 
@@ -72,7 +55,3 @@ position = Vector2( 2, 0 )
 rotating = true
 current = true
 smoothing_enabled = true
-=======
-position = Vector2( -4.20543, -2.50371 )
-shape = SubResource( 2 )
->>>>>>> muudetud Chippy teleportimine ühel levelil

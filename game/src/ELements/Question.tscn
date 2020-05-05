@@ -1,10 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-<<<<<<< HEAD
 [ext_resource path="res://src/ELements/Question.gd" type="Script" id=1]
-=======
-[ext_resource path="res://src/ELements/Questions.gd" type="Script" id=1]
->>>>>>> muudetud Chippy teleportimine ühel levelil
 [ext_resource path="res://assets/Background/küsimuste_popup_ilmatekstita (2).png" type="Texture" id=2]
 [ext_resource path="res://assets/Background/taust_elementideta_2CLEAN.png" type="Texture" id=3]
 
@@ -144,10 +140,5 @@ text = "VASTA"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-<<<<<<< HEAD
-=======
-[connection signal="pressed" from="Vastus1" to="." method="_on_Vastus1_pressed"]
-[connection signal="pressed" from="Vastus2" to="." method="_on_Vastus2_pressed"]
->>>>>>> muudetud Chippy teleportimine ühel levelil
 [connection signal="pressed" from="Vastus3" to="." method="_on_Vastus3_pressed"]
 [connection signal="pressed" from="VASTA" to="." method="_on_VASTA_pressed"]

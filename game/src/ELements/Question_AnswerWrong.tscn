@@ -1,10 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-<<<<<<< HEAD
 [ext_resource path="res://src/ELements/Buttons.gd" type="Script" id=1]
-=======
-[ext_resource path="res://src/ELements/Questions.gd" type="Script" id=1]
->>>>>>> muudetud Chippy teleportimine ühel levelil
 [ext_resource path="res://assets/Background/küsimuste_popup_ilmatekstita (2).png" type="Texture" id=2]
 [ext_resource path="res://assets/Background/taust_elementideta_1CLEAN.png" type="Texture" id=3]
 

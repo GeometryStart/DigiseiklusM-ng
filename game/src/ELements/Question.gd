@@ -7,10 +7,6 @@ export (String) var answer2
 export (String) var answer3
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> muudetud Chippy teleportimine ühel levelil
 var questionList1 = { 
 	1:{
 	"number": "1.",
@@ -58,10 +54,6 @@ func _ready():
 	randomize()
 	
 	var randomList1 = questionList1[randi() % questionList1.size()+1]
-<<<<<<< HEAD
-=======
-	print(randomList1)
->>>>>>> muudetud Chippy teleportimine ühel levelil
 	
 	question = randomList1.get("label")	
 	answer1 = randomList1.get("answer1")
